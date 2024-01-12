@@ -1,0 +1,136 @@
+body {
+  margin:0;
+}
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+  margin-right:50px;
+  font-family: Helvetica, sans-serif;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+  color:white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 50px;
+
+}
+
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+}
+.content h1{
+  font-size:70px;
+}
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+.content p{
+  font-size: 30px;
+}
+
+
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+/*<!--My UX Skills section coded using CSS flex-->*/
+.mySkills h1{
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  padding:50px;
+  padding-bottom: 40px;
+}
+.flexContainer{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  font-family: Helvetica, sans-serif;
+  margin:50px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.flexContainer p{
+ max-width:300px;
+}
+
+/*<!--My Work Section constructed using CSS grid-->*/
+.myWork h1, h3{
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  padding:50px;
+}
+.myWork h1{
+  padding-bottom: 60px;
+  padding-top:60px;
+}
+h4{
+  font-family: Helvetica, sans-serif;
+}
+.workGrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 60%;
+  margin:50px;
+  padding-left: 700px;
+}
+.myWork{
+  background-color: #EBEBEB;
+}
+
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+  font-family: Helvetica, sans-serif;
+
+}
+footer ul, p{
+  list-style: none;
+  padding-left: 5px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+  font-family: Helvetica, sans-serif;
+
+}
+
+/*<!--Media Query-->*/
+@media only screen and (max-width:600){
+  .workGrid{
+    display:grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 100%;
+    margin:50px;
+  }
+}
+/*<!--Added Hover Effect on New Button 'View My Work'-->*/
+button:hover{
+  background-color:#008CBA;
+  color:white;
+  transform:scale(1.1)
+}
